@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="flowchart-section">
+        <h2>🛠️ Flowchart of the NER Process</h2>
+        <p>This flowchart illustrates the steps involved in the Named Entity Recognition (NER) process. It provides a visual representation of how text is processed to identify and classify entities.</p>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/flowchart.png') }}" alt="Flowchart Image" class="flowchart-image">
+        </div>
+    </div>
+{% endblock %}

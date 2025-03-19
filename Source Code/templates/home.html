@@ -1,1 +1,68 @@
+{% extends 'base.html' %}
 
+{% block content %}
+    <div class="home-section">
+        <h2>🌟 Welcome to the NER App</h2>
+        <p>Our application is designed to help you extract meaningful insights from text effortlessly.</p>
+        
+        <h3>🔍 What is Named Entity Recognition?</h3>
+        <p>Named Entity Recognition (NER) is a crucial task in Natural Language Processing (NLP) that involves identifying and classifying entities such as:</p>
+        
+        <div class="ner-cards">
+            <div class="ner-card">
+                <h4>👤 People</h4>
+                <p>Identifies names of individuals, including celebrities, politicians, and everyday people.</p>
+            </div>
+            <div class="ner-card">
+                <h4>🏢 Organizations</h4>
+                <p>Recognizes names of companies, institutions, and governmental bodies.</p>
+            </div>
+            <div class="ner-card">
+                <h4>📍 Locations</h4>
+                <p>Detects geographical locations such as cities, countries, and landmarks.</p>
+            </div>
+            <div class="ner-card">
+                <h4>📅 Dates</h4>
+                <p>Extracts dates and times, including specific events and historical dates.</p>
+            </div>
+            <div class="ner-card">
+                <h4>🔢 Miscellaneous</h4>
+                <p>Identifies other relevant entities, such as quantities, percentages, and more.</p>
+            </div>
+        </div>
+        
+        <h3>✨ Get Started</h3>
+        <p>Ready to dive in? Enter your text below and let our NER app do the magic!</p>
+        
+        <form action="/predictions" method="POST">
+            <textarea name="text" rows="6" cols="60" placeholder="Enter text for entity recognition..."></textarea><br><br>
+            <input type="submit" value="Predict Entities" class="submit-button">
+        </form>
+        
+        <h3>📚 About the Bodo Language</h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h4>📝 Script</h4>
+                <p>Bodo is written in the Devanagari script, which is also used for several other Indian languages.</p>
+            </div>
+            <div class="grid-item">
+                <h4>🌍 Dialects</h4>
+                <p>The language has several dialects, reflecting the diverse cultural influences in the region.</p>
+            </div>
+            <div class="grid-item">
+                <h4>🏛️ Recognition</h4>
+                <p>Bodo was granted the status of an official language in Assam in 2020, highlighting its importance in the region.</p>
+            </div>
+            <div class="grid-item">
+                <h4>🎶 Cultural Significance</h4>
+                <p>The Bodo language is a vital part of the identity and traditions of the Bodo people, encompassing folklore, music, and literature.</p>
+            </div>
+        </div>
+        
+        <h3>📈 Learn More</h3>
+        <p>Check out our <a href="/metrics">Metrics</a> page to see how our models perform, or visit the <a href="/about">About</a> page to learn more about our mission and vision.</p>
+        
+        <h3>🤝 Join Our Community</h3>
+        <p>We believe in collaboration and continuous improvement. Join our community to share your feedback, suggestions, or to contribute to the project!</p>
+    </div>
+{% endblock %}

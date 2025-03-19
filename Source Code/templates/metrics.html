@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="metrics-section">
+        <h2>📊 NER Model Performance Metrics</h2>
+        <p>Here are the performance metrics for the NER model based on the latest predictions:</p>
+        
+        <h3>🔍 Key Metrics Overview</h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h4>CNN Model</h4>
+                <p><strong>Accuracy:</strong> 99.91%</p>
+                <p><strong>Precision:</strong> 96.68%</p>
+                <p><strong>Recall:</strong> 96.79%</p>
+                <p><strong>F1 Score:</strong> 97.23%</p>
+            </div>
+            <div class="grid-item">
+                <h4>GRU Model</h4>
+                <p><strong>Accuracy:</strong> 99.36%</p>
+                <p><strong>Precision:</strong> 97.75%</p>
+                <p><strong>Recall:</strong> 98.94%</p>
+                <p><strong>F1 Score:</strong> 96.35%</p>
+            </div>
+            <div class="grid-item">
+                <h4>LSTM Model</h4>
+                <p><strong>Accuracy:</strong> 96.50%</p>
+                <p><strong>Precision:</strong> 98.52%</p>
+                <p><strong>Recall:</strong> 96.88%</p>
+                <p><strong>F1 Score:</strong> 97.20%</p>
+            </div>
+        </div>
+        
+        <h3>📈 Visualizing Performance</h3>
+        <p>We also provide visualizations of model performance over training epochs, showcasing how accuracy and loss evolve during training.</p>
+        
+        <h3>🔗 Back to Home</h3>
+        <p>Return to the <a href="/">Home</a> page to make new predictions or explore more features.</p>
+    </div>
+{% endblock %}
